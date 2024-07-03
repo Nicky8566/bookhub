@@ -8,5 +8,6 @@ import java.util.Optional;
 
 @Repository
 public interface UserRepo extends MongoRepository<User, String> {
+    // custom method that MongoDB will make based on its naming conventions
     Optional<User> findByEmail(String email);
 }
